@@ -1,0 +1,72 @@
+Em html:
+
+Cadastro</title>
+<div>
+     <h1 id="titulo">Cadastro de DEVs</h1>
+     <p id="subtitulo">Complete suas informações</p>
+     <br>
+</div>
+
+<form>
+     <fieldset class="grupo">
+         <div>
+             <label for="name"><strong>Nome</strong></label>
+             <input type="text" name="nome" id="nome" required>
+         </div>
+
+         <div class="campo"> 
+             <label for="Sobrenome"><strong>Sobrenome</strong></label>
+             <input type="text" name="sobrenome" id="sobrenome" required>
+         </div>
+     </fieldset>
+
+     <div class="campo">
+         <label for="email"><strog>Email</strog></label>
+         <input type="email" name="email" id="email" required>
+     </div>
+   
+
+     <div class="campo">
+       <label>De qual lado da aplicação você desenvolve?</label>
+       <label>
+           <input type="radio" name="devweb" value="frontend" checked>Front-end      
+       </label>
+        <label>
+           <input type="radio" name="devweb" value="backend">Back-End 
+           
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="fullstack">Fullstack 
+        </label>
+     </div>
+
+
+     <div class="campo">
+         <label for="senioridade"><strong>Senioridade</strong></label>
+         <select id="senioridade">
+             <option selected disabled value="">Selecione</option>
+             <option>Junior</option>
+             <option>Pleno</option>
+             <option>Senior</option>
+         </select>
+     </div>
+     <fieldset class="grupo">
+         <div id="check">
+             <label><strog>Selecione as tecnologias que utiliza:</strog></label><br><br>
+             <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+             <label for="tecnologia1">HTML</label>
+             <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+             <label for="tecnologia2">CSS</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+            <label for="tecnologia3">Javascript</label>
+        
+         </div>
+     </fieldset>
+     <div class="campo">
+         <br>
+         <label>Conte um pouco sobre da sua experiência</label>
+         <textarea row="6" style="width: 26em" id="experiência" name="experiencia"></textarea>
+     </div>
+
+     <button class="botão" type="submit">Concluido</button>
+</form>
